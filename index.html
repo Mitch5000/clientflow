@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientflow — Project Management</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f4665'/%3E%3Crect x='5' y='11' width='4.5' height='15' rx='1.6' fill='%23ede9e3' fill-opacity='.45'/%3E%3Crect x='22.5' y='14' width='4.5' height='12' rx='1.6' fill='%23ede9e3' fill-opacity='.45'/%3E%3Crect x='13.5' y='6' width='5.5' height='9.5' rx='1.8' fill='%23c9a35a'/%3E%3Cpath d='M8.8 8.2h3.2M7.4 11h3.6' stroke='%23c9a35a' stroke-opacity='.85' stroke-width='1.6' stroke-linecap='round'/%3E%3Crect x='13.5' y='18' width='5.5' height='8' rx='1.6' fill='%23ede9e3' fill-opacity='.28'/%3E%3C/svg%3E">
+    <meta name="theme-color" content="#141219">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      html { background: #141219; }
+      body { font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif !important; }
+      ::selection { background: #4f4665; color: #ede9e3; }
+      /* varied radii - one uniform radius everywhere reads as templated */
+      .rounded-2xl { border-radius: 12px !important; }
+      .rounded-xl { border-radius: 9px !important; }
+      .rounded-lg { border-radius: 7px !important; }
+      /* warm scrollbars instead of OS default */
+      * { scrollbar-width: thin; scrollbar-color: #3d3749 transparent; }
+      *::-webkit-scrollbar { width: 10px; height: 10px; }
+      *::-webkit-scrollbar-track { background: transparent; }
+      *::-webkit-scrollbar-thumb { background: #2e2938; border-radius: 6px; border: 2px solid #141219; }
+      *::-webkit-scrollbar-thumb:hover { background: #3d3749; }
+      /* visible keyboard focus - a real product cares about this */
+      :focus-visible { outline: 2px solid #6a6186; outline-offset: 1px; }
+      input, textarea, select { font-family: inherit; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+
+  /* brand */
+  --color-accent: #4f4665;
+  --color-accent-light: #6a6186;
+  --color-accent-lighter: #8b83a8;
+  --color-accent-deep: #3d3650;
+  --color-gold: #c9a35a;
+  --color-gold-deep: #8a6a3b;
+
+  /* warm semantic palette - no default tailwind colours */
+  --color-plum: #7d6f9c;
+  --color-plum-light: #9d90b8;
+  --color-moss: #6f9c7e;
+  --color-moss-light: #8fb89c;
+  --color-clay: #c08a6e;
+  --color-clay-light: #d3a68e;
+  --color-rust: #c0705c;
+  --color-rust-light: #d08b78;
+
+  /* surfaces - warm charcoal, not blue-black */
+  --color-surface: #141219;
+  --color-card: #1b1823;
+  --color-raised: #221e2c;
+
+  /* lines + fills */
+  --color-line: #2e2938;
+  --color-line-faint: #262230;
+  --color-line-strong: #3d3749;
+  --color-fill: #201c29;
+  --color-fill-strong: #2a2536;
+
+  /* text - warm off-white, no pure white */
+  --color-ink: #ede9e3;
+  --color-ink-dim: #c9c3d1;
+  --color-muted: #a49dae;
+  --color-faint: #837c8e;
+  --color-ghost: #665f70;
+}

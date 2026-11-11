@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClientFlow — Logo Concepts</title>
+<style>
+  :root {
+    --surface: #141219; --card: #1b1823; --raised: #221e2c;
+    --line: #2e2938; --ink: #ede9e3; --muted: #a49dae; --faint: #837c8e;
+    --accent: #4f4665; --accent-light: #6a6186; --accent-lighter: #9d90b8;
+    --gold: #c9a35a; --gold-deep: #8a6a3b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--surface); color: var(--ink); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; padding: 40px 24px 64px; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.5; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; margin-top: 28px; }
+  .concept { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .concept h2 { font-size: 14px; font-weight: 700; }
+  .concept .tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--gold); border: 1px solid rgba(201,163,90,0.3); background: rgba(201,163,90,0.08); padding: 2px 8px; border-radius: 99px; margin-left: 8px; vertical-align: 1px; }
+  .concept p { font-size: 12px; color: var(--faint); margin-top: 6px; line-height: 1.55; }
+  .row { display: flex; align-items: center; gap: 18px; margin-top: 16px; flex-wrap: wrap; }
+  .tile { width: 56px; height: 56px; border-radius: 12px; background: var(--accent); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(237,233,227,0.08); flex-shrink: 0; }
+  .tile.sm { width: 32px; height: 32px; border-radius: 8px; }
+  .tile.xs { width: 20px; height: 20px; border-radius: 5px; }
+  .lockup { display: flex; align-items: center; gap: 10px; background: var(--raised); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; }
+  .lockup .tile { width: 34px; height: 34px; border-radius: 9px; }
+  .wordmark { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; }
+  .sizes { display: flex; align-items: center; gap: 12px; }
+  .label { font-size: 10px; color: var(--faint); }
+  .current { border-style: dashed; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ClientFlow — logo concepts</h1>
+  <p class="sub">Custom marks drawn for the platform, in the existing plum/gold palette. Each concept is shown as an app tile (56px), a sidebar lockup, and at favicon sizes (32 / 20px) to prove it survives small.</p>
+
+  <div class="grid">
+
+    <!-- CONCEPT 1 -->
+    <div class="concept">
+      <h2>1 · Kanban Flow <span class="tag">RECOMMENDED</span></h2>
+      <p>A board of three columns; the middle column lifts into a gold card mid-move, with motion lines behind it. It literally draws the product's core action — a task flowing across a board — and reads clearly even at 16px.</p>
+      <div class="row">
+        <div class="tile">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="5" y="11" width="4.5" height="15" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/>
+            <rect x="22.5" y="14" width="4.5" height="12" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/>
+            <rect x="13.5" y="6" width="5.5" height="9.5" rx="1.8" fill="#c9a35a"/>
+            <path d="M8.8 8.2h3.2M7.4 11h3.6" stroke="#c9a35a" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="round"/>
+            <rect x="13.5" y="18" width="5.5" height="8" rx="1.6" fill="#ede9e3" fill-opacity="0.25"/>
+          </svg>
+        </div>
+        <div class="lockup">
+          <div class="tile">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+              <rect x="5" y="11" width="4.5" height="15" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/>
+              <rect x="22.5" y="14" width="4.5" height="12" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/>
+              <rect x="13.5" y="6" width="5.5" height="9.5" rx="1.8" fill="#c9a35a"/>
+              <path d="M8.8 8.2h3.2M7.4 11h3.6" stroke="#c9a35a" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="round"/>
+              <rect x="13.5" y="18" width="5.5" height="8" rx="1.6" fill="#ede9e3" fill-opacity="0.25"/>
+            </svg>
+          </div>
+          <span class="wordmark">Clientflow</span>
+        </div>
+        <div class="sizes">
+          <div><div class="tile sm"><svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect x="5" y="11" width="4.5" height="15" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/><rect x="22.5" y="14" width="4.5" height="12" rx="1.6" fill="#ede9e3" fill-opacity="0.4"/><rect x="13.5" y="6" width="5.5" height="9.5" rx="1.8" fill="#c9a35a"/><rect x="13.5" y="18" width="5.5" height="8" rx="1.6" fill="#ede9e3" fill-opacity="0.25"/></svg></div><div class="label">32</div></div>
+          <div><div class="tile xs"><svg width="12" height="12" viewBox="0 0 32 32" fill="none"><rect x="5" y="11" width="4.5" height="15" rx="1.6" fill="#ede9e3" fill-opacity="0.45"/><rect x="22.5" y="14" width="4.5" height="12" rx="1.6" fill="#ede9e3" fill-opacity="0.45"/><rect x="13.5" y="6" width="5.5" height="20" rx="1.8" fill="#c9a35a"/></svg></div><div class="label">20</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 2 -->
+    <div class="concept">
+      <h2>2 · Monogram C + task dot</h2>
+      <p>A geometric "C" for ClientFlow, with the terminal dot lifted off the stroke in gold — the dot is a completed task, the gap is the space it just left. Typographic, minimal, very "studio-made".</p>
+      <div class="row">
+        <div class="tile">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M23.5 10.5A8.5 8.5 0 1 0 23.5 21.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+            <circle cx="24.5" cy="23.5" r="2.6" fill="#c9a35a"/>
+          </svg>
+        </div>
+        <div class="lockup">
+          <div class="tile">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+              <path d="M23.5 10.5A8.5 8.5 0 1 0 23.5 21.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+              <circle cx="24.5" cy="23.5" r="2.6" fill="#c9a35a"/>
+            </svg>
+          </div>
+          <span class="wordmark">Clientflow</span>
+        </div>
+        <div class="sizes">
+          <div><div class="tile sm"><svg width="18" height="18" viewBox="0 0 32 32" fill="none"><path d="M23.5 10.5A8.5 8.5 0 1 0 23.5 21.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="24.5" cy="23.5" r="2.8" fill="#c9a35a"/></svg></div><div class="label">32</div></div>
+          <div><div class="tile xs"><svg width="12" height="12" viewBox="0 0 32 32" fill="none"><path d="M23.5 10.5A8.5 8.5 0 1 0 23.5 21.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="4.6" stroke-linecap="round" fill="none"/><circle cx="24.5" cy="23.5" r="3" fill="#c9a35a"/></svg></div><div class="label">20</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 3 -->
+    <div class="concept">
+      <h2>3 · Flow Path</h2>
+      <p>One continuous S-stroke — the "flow" — with node dots at each end; the trailing node is gold, so the line reads as work moving from start to done. Elegant, abstract, scales perfectly.</p>
+      <div class="row">
+        <div class="tile">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M7 23C7 17 13 19 16 16C19 13 25 15 25 9" stroke="#ede9e3" stroke-opacity="0.85" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <circle cx="7" cy="23" r="3" fill="#ede9e3" fill-opacity="0.85"/>
+            <circle cx="25" cy="9" r="3" fill="#c9a35a"/>
+          </svg>
+        </div>
+        <div class="lockup">
+          <div class="tile">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+              <path d="M7 23C7 17 13 19 16 16C19 13 25 15 25 9" stroke="#ede9e3" stroke-opacity="0.85" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <circle cx="7" cy="23" r="3" fill="#ede9e3" fill-opacity="0.85"/>
+              <circle cx="25" cy="9" r="3" fill="#c9a35a"/>
+            </svg>
+          </div>
+          <span class="wordmark">Clientflow</span>
+        </div>
+        <div class="sizes">
+          <div><div class="tile sm"><svg width="18" height="18" viewBox="0 0 32 32" fill="none"><path d="M7 23C7 17 13 19 16 16C19 13 25 15 25 9" stroke="#ede9e3" stroke-opacity="0.85" stroke-width="3.4" stroke-linecap="round" fill="none"/><circle cx="7" cy="23" r="3.2" fill="#ede9e3" fill-opacity="0.85"/><circle cx="25" cy="9" r="3.2" fill="#c9a35a"/></svg></div><div class="label">32</div></div>
+          <div><div class="tile xs"><svg width="12" height="12" viewBox="0 0 32 32" fill="none"><path d="M7 23C7 17 13 19 16 16C19 13 25 15 25 9" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="7" cy="23" r="3.6" fill="#ede9e3" fill-opacity="0.9"/><circle cx="25" cy="9" r="3.6" fill="#c9a35a"/></svg></div><div class="label">20</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 4 -->
+    <div class="concept">
+      <h2>4 · Momentum + spark</h2>
+      <p>Two forward chevrons (progress, movement through columns) with a gold spark breaking off the top — energy without borrowing a lightning bolt. Sporty, compact, strongest at tiny sizes.</p>
+      <div class="row">
+        <div class="tile">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M7 9.5L13.5 16L7 22.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M16 9.5L22.5 16L16 22.5" stroke="#ede9e3" stroke-opacity="0.45" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="25" cy="7.5" r="2.4" fill="#c9a35a"/>
+          </svg>
+        </div>
+        <div class="lockup">
+          <div class="tile">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+              <path d="M7 9.5L13.5 16L7 22.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <path d="M16 9.5L22.5 16L16 22.5" stroke="#ede9e3" stroke-opacity="0.45" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="25" cy="7.5" r="2.4" fill="#c9a35a"/>
+            </svg>
+          </div>
+          <span class="wordmark">Clientflow</span>
+        </div>
+        <div class="sizes">
+          <div><div class="tile sm"><svg width="18" height="18" viewBox="0 0 32 32" fill="none"><path d="M7 9.5L13.5 16L7 22.5" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M16 9.5L22.5 16L16 22.5" stroke="#ede9e3" stroke-opacity="0.45" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="25" cy="7.5" r="2.6" fill="#c9a35a"/></svg></div><div class="label">32</div></div>
+          <div><div class="tile xs"><svg width="12" height="12" viewBox="0 0 32 32" fill="none"><path d="M6.5 9L13.5 16L6.5 23" stroke="#ede9e3" stroke-opacity="0.9" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M17 9L24 16L17 23" stroke="#ede9e3" stroke-opacity="0.45" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div><div class="label">20</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURRENT -->
+    <div class="concept current">
+      <h2>Current · lucide "Zap"</h2>
+      <p>A stock lightning bolt from the icon library. Generic, borrowed, and says "speed" rather than "project management" — it's the kind of placeholder a template ships with.</p>
+      <div class="row">
+        <div class="tile">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ede9e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+        </div>
+        <div class="lockup">
+          <div class="tile">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ede9e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+          </div>
+          <span class="wordmark">Clientflow</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
